@@ -32,6 +32,7 @@ public class LocationController {
 	@Autowired
 	EmailUtil emailUtil;
 	
+	
 	@Autowired
 	ServletContext sc;
 	
