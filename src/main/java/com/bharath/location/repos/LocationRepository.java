@@ -10,7 +10,7 @@ import com.bharath.location.entities.Location;
 
 public interface LocationRepository extends JpaRepository<Location, Integer> {
 	
-	@Query("select type, count(type) from location group by type")
+	@Query("select type, count(type) from Location group by type")
 	public List<Object[]> findTypeAndTypeCount();
 	
 }
